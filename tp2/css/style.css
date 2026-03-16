@@ -1,0 +1,204 @@
+/* Style général de la page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Style du header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: white;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+/* Style du main */
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Style des fieldsets */
+fieldset {
+    border: 2px solid #667eea;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    background-color: #f8f9ff;
+}
+
+fieldset:last-child {
+    margin-bottom: 0;
+}
+
+/* Style des légendes */
+legend {
+    color: #667eea;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+/* Style des labels */
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+label:first-of-type {
+    margin-top: 0;
+}
+
+/* Style des inputs */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+
+/* Style du file input */
+input[type="file"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+input[type="file"]:hover {
+    border-color: #667eea;
+    background-color: #f0f4ff;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #667eea;
+    background-color: #f0f4ff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(102, 126, 234, 0.3);
+}
+
+/* Style des select */
+select {
+    cursor: pointer;
+}
+
+optgroup {
+    font-weight: bold;
+    color: #667eea;
+}
+
+option {
+    padding: 10px;
+}
+
+/* Style des conditions générales */
+.conditions {
+    background-color: #f0f4ff;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    border-left: 4px solid #667eea;
+}
+
+.conditions input[type="checkbox"] {
+    margin-right: 10px;
+    width: auto;
+    cursor: pointer;
+}
+
+.conditions label {
+    display: inline;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 5px;
+    color: #333;
+}
+
+/* Style du bouton d'inscription */
+.btn-inscription {
+    width: 100%;
+    padding: 14px 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-inscription:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.btn-inscription:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(102, 126, 234, 0.4);
+}
+
+/* Style des inputs désactivés ou placeholders */
+input::placeholder {
+    color: #999;
+}
+
+/* Style responsive */
+@media (max-width: 600px) {
+    main {
+        padding: 25px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    fieldset {
+        padding: 15px;
+    }
+
+    legend {
+        font-size: 1.1rem;
+    }
+}

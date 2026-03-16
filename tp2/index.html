@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header align="center"><h1>Formulaire d'inscription</h1></header>
+    <main>
+        <fieldset>
+            <legend>Informations personnelles</legend>
+            <label for="firstname">Nom:</label>
+            <br>
+            <input type="text" id="firstname">
+            <br>
+            <label for="lastname">Prénom:</label>
+            <br>
+            <input type="text" id="lastname">
+            <br>
+            <label for="email">Email:</label>
+            <br>
+            <input type="email" id="email" placeholder="Alan@exemple.com">
+            <br>
+            <label for="phone">Téléphone:</label>
+            <br>
+            <input type="tel" id="phone" placeholder="+212 0 00 00 00 00">
+            <br>
+            <label for="datenaiss">Date de naissance:</label>
+            <br>
+            <input type="date" id="datenaiss">
+            <br>
+            <label for="mdp">Mot de passe:</label>
+            <br>
+            <input type="password" id="mdp" placeholder="********">
+            <br>
+            <label for="photo">Photo de profil:</label>
+            <br>
+            <input type="file" id="photo" accept="image/*">
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Préférences</legend>
+            <label for="pays">Pays:</label>
+            <br>
+            <select name="pays" id="pays">
+                <option value="">--</option>
+                <optgroup label="Europe">
+                    <option value="Es">Espane</option>
+                    <option value="Fr">France</option>
+                    <option value="It">Italie</option>
+                </optgroup>
+                <optgroup label="Afrique">
+                    <option value="Ma">Maroc</option>
+                    <option value="Ts">Tunisie</option>
+                    <option value="Pl">Palestine</option>
+                </optgroup>
+                <optgroup label="Amérique">
+                    <option value="EU">Etats-Unis</option>
+                    <option value="Ca">Canada</option>
+                </optgroup>
+            </select>
+            <br>
+            <label for="genre">Genre:</label>
+            <br>
+            <label for="H">Homme</label>
+            <input type="radio" name="genre" id="H">
+            <label for="F">Femme</label>
+            <input type="radio" name="genre" id="F">
+            <br><br>
+            <label for="">Centres d'intérêt professionnels:</label>
+            <br>
+            <input type="checkbox" id="ia">
+            <label for="ia">Intelligence artificielle</label>
+            <br>
+            <input type="checkbox" id="ds">
+            <label for="ds">Data science</label>
+            <br>
+            <input type="checkbox" id="ad">
+            <label for="ad">Analyse de données</label>
+            <br>
+            <input type="checkbox" id="ml">
+            <label for="ml">Machine learning</label>
+            <br><br>
+            <label for="">Centres d'intérêt technologiques:</label>
+            <br>
+            <input type="checkbox" id="prog">
+            <label for="prog">Programmation</label>
+            <br>
+            <input type="checkbox" id="formation">
+            <label for="formation">Apprentissage en ligne</label>
+            <br>
+            <input type="checkbox" id="tools">
+            <label for="tools">outils informatiques</label>
+            <br><br>
+            <label for="">Centres d'intérêt plus généraux:</label>
+            <br>
+            <input type="checkbox" id="lecture">
+            <label for="lecture">Lecture d’articles scientifiques et technologiques</label>
+            <br>
+            <input type="checkbox" id="solution">
+            <label for="solution">Résolution de problèmes et challenges logiques</label>
+            <br>
+            <input type="checkbox" id="collab">
+            <label for="collab">Travail collaboratif sur des projets technologiques</label>
+            <br><br>
+            <label for="biographie">Biographie:</label>
+            <br>
+            <textarea id="biographie" name="biographie" 
+                        rows="7" cols="50" placeholder="Entrer votre biographie...">
+            </textarea>
+            <br>
+        </fieldset>
+
+        <div class="conditions">
+            <input type="checkbox" id="cgu" name="cgu">
+            <label for="cgu">J'accepte les conditions générales d'utilisation (CGU)</label>
+        </div>
+
+        <button type="submit" class="btn-inscription">S'inscrire</button>
+
+    </main>
+    <footer>
+        <p align="center">&copy;2026-Formulaire d'inscription</p>
+    </footer>
+
+    
+</body>
+</html>
